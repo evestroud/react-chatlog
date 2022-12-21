@@ -19,10 +19,17 @@ const App = () => {
     setMessageData(newMessageData);
   };
 
+  const countLikes = () => {
+    return messageData
+      .map((message) => (message.liked ? 1 : 0))
+      .reduce((p, c) => p + c);
+  };
+
   return (
     <div id="App">
       <header>
         <h1>Application title</h1>
+        <h2>Total Likes: {countLikes()} ❤️s</h2>
       </header>
       <main>
         <ChatLog entries={messageData} toggleLike={toggleLike} />
