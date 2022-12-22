@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-chatlog/static/css/main.4f81e260.css",
-    "main.js": "/react-chatlog/static/js/main.c3198a8c.js",
-    "index.html": "/react-chatlog/index.html",
-    "main.4f81e260.css.map": "/react-chatlog/static/css/main.4f81e260.css.map",
-    "main.c3198a8c.js.map": "/react-chatlog/static/js/main.c3198a8c.js.map"
+    "main.css": "/static/css/main.4f81e260.css",
+    "main.js": "/static/js/main.f06b5fc0.js",
+    "index.html": "/index.html",
+    "main.4f81e260.css.map": "/static/css/main.4f81e260.css.map",
+    "main.f06b5fc0.js.map": "/static/js/main.f06b5fc0.js.map"
   },
   "entrypoints": [
     "static/css/main.4f81e260.css",
-    "static/js/main.c3198a8c.js"
+    "static/js/main.f06b5fc0.js"
   ]
 }
