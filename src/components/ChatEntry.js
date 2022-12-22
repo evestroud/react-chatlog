@@ -7,7 +7,7 @@ const ChatEntry = (props) => {
     props.toggleLike(props.id);
   };
 
-  const senderClass = props.sender === 'Estragon' ? 'local' : 'remote';
+  const senderClass = props.sender === 'Vladimir' ? 'local' : 'remote';
 
   return (
     <div className={'chat-entry ' + senderClass}>
