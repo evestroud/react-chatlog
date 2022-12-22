@@ -4,7 +4,17 @@ import chatMessages from './data/messages.json';
 import ChatLog from './components/ChatLog';
 
 const App = () => {
-  let [messageData, setMessageData] = useState(chatMessages);
+  const messageCopy = chatMessages.map((message) => {
+    return {
+      id: message.id,
+      sender: message.sender,
+      body: message.body,
+      timeStamp: message.timeStamp,
+      liked: message.liked,
+    };
+  });
+
+  let [messageData, setMessageData] = useState(messageCopy);
 
   const toggleLike = (id) => {
     let newMessageData = messageData.map((message) => {
