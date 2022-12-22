@@ -7,8 +7,10 @@ const ChatEntry = (props) => {
     props.toggleLike(props.id);
   };
 
+  const senderClass = props.sender === 'Estragon' ? 'local' : 'remote';
+
   return (
-    <div className="chat-entry local">
+    <div className={'chat-entry ' + senderClass}>
       <h2 className="entry-name">{props.sender}</h2>
       <section className="entry-bubble">
         <p>{props.body}</p>
